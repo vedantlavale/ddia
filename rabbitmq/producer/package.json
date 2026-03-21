@@ -1,0 +1,17 @@
+{
+  "name": "producer",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.10.9"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "start": "bun producer.ts"
+  }
+}
