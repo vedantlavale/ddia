@@ -1,0 +1,19 @@
+{
+  "name": "message-streams",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "producer": "KAFKAJS_NO_PARTITIONER_WARNING=1 bun run src/producer.ts",
+    "consumer": "KAFKAJS_NO_PARTITIONER_WARNING=1 bun run src/consumer.ts"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
